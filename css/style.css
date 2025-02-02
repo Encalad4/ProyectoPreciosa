@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Leckerli One', cursive;
     text-align: center;
     color: white;
     margin: 0;
@@ -9,18 +9,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
     background: rgba(255, 255, 255, 0.2);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2; 
 }
 
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    animation: growShrink 2s infinite;
+    transition: transform 0.3s ease;
 }
 
 p {
@@ -60,4 +64,73 @@ button:hover {
     color: #ff4757;
     font-size: 1rem;
     margin-top: 1rem;
+}
+#hint {
+    font-size: 1rem;
+    opacity: 0.9; 
+}
+/*ANIMACIONESSSSSS*/
+@keyframes growShrink {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.heart {
+    position: absolute;
+    top: -10%; /* Start above the screen */
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    animation: fall 5s linear infinite, spin 2s linear infinite;
+    z-index: 1;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 10px;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 110%; /* Move below the screen */
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(315deg); /* Full rotation */
+    }
+}
+body {
+    overflow: hidden;
+    position: relative; 
 }
