@@ -39,7 +39,7 @@ function createAirplanes() {
         airplane.innerHTML = '✈️'; 
 
 
-        airplane.style.left = `${Math.random() * 100}vh`;
+        airplane.style.top = `${Math.random() * 100}vh`;
         airplane.style.animationDelay = `${Math.random() * 5}s`;
 
         container.appendChild(airplane);
