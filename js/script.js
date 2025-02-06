@@ -7,7 +7,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
         errorMessage.classList.add("hidden");
         const correctSound = new Audio("../media/correctSound.mp3");
         correctSound.play(); 
-        const yipiSound = new Audio("Yipi.mp3");
+        const yipiSound = new Audio("/ProyectoPreciosa/media/Yipi.mp3");
         yipiSound.play();   
         confetti({
             particleCount: 100, 
