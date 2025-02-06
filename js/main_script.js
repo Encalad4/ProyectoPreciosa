@@ -4,7 +4,7 @@ const noButton = document.getElementById("noButton");
 
 
 yesButton.addEventListener("click", function() {
-    const yipiSound = new Audio("/ProyectoPreciosa/media/Yipi.mp3");
+    const yipiSound = new Audio("/ProyectoPreciosa/media/Gracias.mp3");
     yipiSound.play();  
 
     confetti({
@@ -15,7 +15,7 @@ yesButton.addEventListener("click", function() {
 
     setTimeout(function() {
         alert("Congratulations, now you are my Valentine. Let's make it the second one of many more! ❤️");
-    }, 2500);
+    }, 4000);
     
 });
 
