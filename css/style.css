@@ -69,6 +69,21 @@ button:hover {
     font-size: 1rem;
     opacity: 0.9; 
 }
+#yesButton {
+    background: #4CAF50; /* Green for "Yes" */
+}
+
+#yesButton:hover {
+    background: #45a049;
+}
+
+#noButton {
+    background: #f44336; /* Red for "No" */
+}
+
+#noButton:hover {
+    background: #e53935;
+}
 /*ANIMACIONESSSSSS*/
 @keyframes growShrink {
     0% {
@@ -133,4 +148,21 @@ button:hover {
 body {
     overflow: hidden;
     position: relative; 
+}
+
+.airplane {
+    position: absolute;
+    font-size: 2rem; /* Adjust size if using an emoji */
+    animation: fly 10s linear infinite; /* Animation for flying */
+}
+
+@keyframes fly {
+    0% {
+        left: -10%; /* Start off-screen to the left */
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        left: 110%; /* Move off-screen to the right */
+        transform: translateY(-50%) rotate(0deg);
+    }
 }
