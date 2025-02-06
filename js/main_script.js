@@ -4,7 +4,7 @@ const noButton = document.getElementById("noButton");
 
 
 yesButton.addEventListener("click", function() {
-    const yipiSound = new Audio("../media/Yipi.mp3");
+    const yipiSound = new Audio("/ProyectoPreciosa/media/Yipi.mp3");
     yipiSound.play();  
 
     confetti({
@@ -20,7 +20,7 @@ yesButton.addEventListener("click", function() {
 });
 
 noButton.addEventListener("click", function() {
-    const errorSound = new Audio("../media/Nuh-uh.mp3");
+    const errorSound = new Audio("/ProyectoPreciosa/media/Nuh-uh.mp3");
     errorSound.play();
 
     setTimeout(function() {

@@ -5,7 +5,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
    
     if (password === "1805461595") {
         errorMessage.classList.add("hidden");
-        const correctSound = new Audio("../media/correctSound.mp3");
+        const correctSound = new Audio("/ProyectoPreciosa/media/correctSound.mp3");
         correctSound.play(); 
         const yipiSound = new Audio("/ProyectoPreciosa/media/Yipi.mp3");
         yipiSound.play();   
@@ -21,7 +21,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
     } else {
 
         errorMessage.classList.remove("hidden");
-        const errorSound = new Audio("../media/errorSound.wav");
+        const errorSound = new Audio("/ProyectoPreciosa/media/errorSound.wav");
         errorSound.play();
     }
 });
