@@ -14,7 +14,7 @@ yesButton.addEventListener("click", function() {
     });
 
     setTimeout(function() {
-        alert("Congratulations, now you are my Valentine. Let's make it the second one of many more! ❤️");
+        alert("Yipiiiiii, ahora somos Valentinesss. Hagamoslo el 2do de muchos más mi corazón hermoso. Juntos hasta el final. Te amooooo❤️");
     }, 4000);
     
 });
@@ -24,7 +24,7 @@ noButton.addEventListener("click", function() {
     errorSound.play();
 
     setTimeout(function() {
-        alert("Oops, wrong answer. Try again! 😉");
+        alert("Ayyyyy que penita, te equivocaste. Pero no pasa nada, porque yo te amo mucho, asi que te doy otra oportunidadsovia 😉");
     }, 4500);
     
 });
@@ -39,8 +39,8 @@ function createAirplanes() {
         airplane.innerHTML = '✈️'; 
 
 
-        airplane.style.top = `${Math.random() * 100}vh`;
-        airplane.style.animationDelay = `${Math.random() * 10}s`;
+        airplane.style.left = `${Math.random() * 100}vh`;
+        airplane.style.animationDelay = `${Math.random() * 5}s`;
 
         container.appendChild(airplane);
     }
